@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<!--引入react核心库-->
+<script src="../js/react.development.js"></script>
+<!--引入react-dom，用于支持react操作dom-->
+<script src="../js/react-dom.development.js"></script>
+<!--引入babel，用于将jsx转为js-->
+<script src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+  //生命周期大体分为三个阶段
+    //1.初始化阶段：由ReactDOM.render()触发---初次渲染
+    //1.constructor()
+    //2.getDerivedStateFromProps()
+    //3.render() ====>  必须使用一个
+    //4.componentDidMount() ====>  常用
+          //一般在这个钩子中做一些初始化的事，例如：开启定时器、发送网络请求、订阅消息
+  //2.更新阶段：由组件内部this.setState()或父组件render触发
+    //1.getDerivedStateFromProps()
+    //2.shouldComponentUpdate()
+    //3.render() ====>  必须使用一个
+    //4.getSnapshotBeforeUpdate()
+    //5.componentDidUpdate()
+  //3.卸载组件：由ReactDOM.unmountComponentAtNode()触发
+    //1.componentWillUnmount() ====>  常用
+          //一般在这个钩子中做一些收尾的事，例如：关闭定时器、取消订阅消息
+
+  //创建组件
+  class Life extends React.Component {
+    constructor(props) {
+      console.log('constructor');
+      super(props);
+    }
+
+    //若state的值在任何时候都取决于props，那么可以使用getDerivedStateFromProps，不过这个钩子意义不大
+    static getDerivedStateFromProps(props, state) {
+      console.log('getDerivedStateFromProps', props, state);
+      // return props
+      return null
+    }
+
+    state = {count: 0}
+
+    //将要挂载，与旧版比要加UNSAFE_前缀
+    // UNSAFE_componentWillMount() {
+    //   console.log('componentWillMount');
+    // }
+
+    //初始化渲染、状态更新之后
+    render() {
+      console.log('render');
+      const {count} = this.state
+      return (
+          <div>
+            <h2>当前求和为；{count}</h2>
+            <button onClick={this.add}>+1</button>
+            <button onClick={this.death}>卸载组件</button>
+            <button onClick={this.force}>不更改任何状态中的数据，强制更新</button>
+          </div>
+      )
+    }
+
+    //在更新之前获取快照
+    getSnapshotBeforeUpdate() {
+      console.log('getSnapshotBeforeUpdate');
+      return '11111'
+    }
+
+    //组件挂载完毕
+    componentDidMount() {
+      console.log('componentDidMount');
+    }
+
+    //组件即将要卸载
+    componentWillUnmount() {
+      console.log('componentWillUnmount');
+    }
+
+    //控制组件更新
+    shouldComponentUpdate() {
+      console.log('shouldComponentUpdate');
+      return true;
+      // return false;
+    }
+
+    //组件将要更新,与旧版比要加UNSAFE_前缀
+    // UNSAFE_componentWillUpdate() {
+    //   console.log('componentWillUpdate');
+    // }
+
+    //组件更新完毕
+    componentDidUpdate(preProps, preState, snapshotValue) {
+      console.log('componentDidUpdate', preProps, preState, snapshotValue);
+    }
+
+    add = () => {
+      let {count} = this.state
+      this.setState({count: count++})
+    }
+
+    death = () => {
+      ReactDOM.unmountComponentAtNode(document.getElementById('test'))
+    }
+
+    force = () => {
+      //强制更新不受shouldComponentUpdate控制
+      this.forceUpdate()
+    }
+  }
+
+  //组件将要接收新的props的钩子,与旧版比要加UNSAFE_前缀
+  // UNSAFE_componentWillReceiveProps(props) {
+  //   console.log('componentWillReceiveProps', props);
+  // }
+
+  //渲染组件
+  ReactDOM.render(<Life count={199}/>, document.getElementById('test'))
+</script>
+
+</body>
+</html>

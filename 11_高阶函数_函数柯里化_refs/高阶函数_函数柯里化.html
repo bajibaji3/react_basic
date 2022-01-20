@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<!--引入react核心库-->
+<script src="../js/react.development.js"></script>
+<!--引入react-dom，用于支持react操作dom-->
+<script src="../js/react-dom.development.js"></script>
+<!--引入babel，用于将jsx转为js-->
+<script src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+  //高阶函数：符合下面两个规范中的任意一个：
+    //1、若A函数，接收的参数是一个函数，那么A就可以称之为高阶函数
+    //2、若A函数，调用的返回值依然是一个函数，那么A就可以称之为高阶函数
+    //常见的高阶函数：Promise、setTimeout、arr.map()等等
+  //函数的柯里化：通过函数调用继续返回函数的方式，实现多次接收参数最后统一处理的函数编码形式
+
+  //1、创建类式组件
+  class MyComponent extends React.Component {
+    //受控组件就是将数据维护到state中，相当于vue中的双向数据绑定
+    //相比于非受控组件，受控组件可以减少ref的使用
+    state = {
+      userName: '',
+      password: ''
+    }
+
+    render() {
+      return (
+          <form onSubmit={this.handleSubmit}>
+            用户名：<input onChange={this.saveFormData('userName')} type="text" name="userName"/><br/>
+            密码：<input onChange={this.saveFormData('password')} type="password" name="password"/><br/>
+            <button>登录</button>
+          </form>
+      )
+    }
+
+    //表单提交事件
+    handleSubmit = (event) => {
+      event.preventDefault()//阻止表单提交
+      const {userName, password} = this.state;
+      alert(userName + '   ' + password)
+    }
+
+    //保存表单数据到状态中
+    saveFormData = (dataType) => {
+      return (event) => {
+        console.log(dataType, event.target.value);
+        this.setState({[dataType]: event.target.value})
+      }
+    }
+  }
+  //2、渲染组件到页面
+  ReactDOM.render(<MyComponent/>, document.getElementById('test'))
+</script>
+
+</body>
+</html>

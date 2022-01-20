@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="29f607ea-10cc-4265-9698-de19e0f98f66" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react_basic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01_hello_react/hello_react.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_虚拟DOM的两种创建方式/1.使用jsx创建虚拟DOM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_虚拟DOM的两种创建方式/2.使用js创建虚拟DOM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02_虚拟DOM的两种创建方式/3.虚拟DOM与真实DOM.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_jsx语法规则/jsx语法规则.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04_jsx小练习/jsx小练习.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_react中定义组件/1.函数式组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05_react中定义组件/2.类式组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_组件实例三大属性1_state/state.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06_组件实例三大属性1_state/state的简写方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_组件实例三大属性2_props/1.props基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_组件实例三大属性2_props/2.对props进行限制.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_组件实例三大属性2_props/3.props的简写方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07_组件实例三大属性2_props/4.函数式组件使用props.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_组件实例三大属性3_refs/1.字符串形式的ref.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_组件实例三大属性3_refs/2.回调形式的ref.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_组件实例三大属性3_refs/3.回调ref回调执行次数的问题.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08_组件实例三大属性3_refs/4.createRef.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09_react中的事件处理_refs/事件处理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_react中收集表单数据_refs/1.非受控组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10_react中收集表单数据_refs/2.受控组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_高阶函数_函数柯里化_refs/2.不用函数柯里化实现.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_高阶函数_函数柯里化_refs/高阶函数_函数柯里化.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/1.引出生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/2.react生命周期(旧).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/2.react生命周期（旧）.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/3.react生命周期(新).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/3.react生命周期（新）.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_组件的生命周期/4.getSnapshotBeforeUpdate的使用场景.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_DOM的Diffing算法/1.验证Diffing算法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_DOM的Diffing算法/2.key的作用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/babel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/prop-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/react-dom.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/react.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习/1.类的基本知识.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习/2.原生事件绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习/3.类中方法this的指向.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习/4.展开运算符.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/复习/5.对象相关的知识.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1znWBqy07IR2CNIBKQbm1eevf8T" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react_staging" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebStorm\project\react_basic" />
+      <recent name="D:\WebStorm\project\react_basic\12_组件的生命周期" />
+      <recent name="D:\WebStorm\project\react_basic\11_高阶函数_函数柯里化_refs" />
+      <recent name="D:\WebStorm\project\react_basic\10_react中收集表单数据_refs" />
+      <recent name="D:\WebStorm\project\react_basic\08_组件实例三大属性3_refs" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29f607ea-10cc-4265-9698-de19e0f98f66" name="Default Changelist" comment="" />
+      <created>1634784200200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634784200200</updated>
+      <workItem from="1634784201371" duration="23419000" />
+      <workItem from="1634869128763" duration="15922000" />
+      <workItem from="1635385599169" duration="8114000" />
+      <workItem from="1635482894924" duration="13594000" />
+      <workItem from="1642566717968" duration="8735000" />
+      <workItem from="1642684917569" duration="432000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

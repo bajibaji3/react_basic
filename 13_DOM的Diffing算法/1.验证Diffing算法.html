@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="test"></div>
+<!--引入react核心库-->
+<script src="../js/react.development.js"></script>
+<!--引入react-dom，用于支持react操作dom-->
+<script src="../js/react-dom.development.js"></script>
+<!--引入babel，用于将jsx转为js-->
+<script src="../js/babel.min.js"></script>
+
+<script type="text/babel">
+  //创建组件
+  //生命周期回调函数/生命周期钩子函数/生命周期函数/生命周期钩子
+  class Time extends React.Component {
+    state = {date: new Date()}
+
+    //初始化渲染、状态更新之后
+    render() {
+      return (
+          <div>
+            <h2>hello</h2>
+            <label>
+              <input type="text"/>
+            </label>
+            <span>
+              现在是：{this.state.date.toTimeString()}
+              <label>
+                <input type="text"/>
+              </label>
+            </span>
+          </div>
+      )
+    }
+
+    //组件挂载完毕
+    componentDidMount() {
+      this.timer = setInterval(() => {
+        this.setState({date: new Date()})
+      }, 1000)
+    }
+
+  }
+  //渲染组件
+  ReactDOM.render(<Time/>, document.getElementById('test'))
+</script>
+
+</body>
+</html>

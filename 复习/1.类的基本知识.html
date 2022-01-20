@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script type="text/javascript">
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      //类中定义的方法都是放在了类的原型对象上，供实例去使用
+      speak() {
+        console.log(this.name + '说话了...')
+      }
+    }
+    let p1 = new Person('Tom', 23)
+    let p2 = new Person('Tony', 22)
+    console.log(p1);
+    console.log(p2);
+    p1.speak()
+    p2.speak()
+
+    class Student extends Person {
+      constructor(name, age, grade) {
+        super(name, age);
+        this.grade = grade;
+      }
+      //重写父类方法
+      speak() {
+        console.log(this.grade + '年级')
+      }
+    }
+    let s1 = new Student('张三', 25, 2)
+    console.log(s1);
+    s1.speak()
+  </script>
+</body>
+</html>
